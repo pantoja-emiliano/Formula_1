@@ -1,6 +1,11 @@
+/* color de la pagina 1*/
 body{
-    background-color: #3f72af
+    background-color: pink;
 }
-nav{
-
+.resultado{
+    color: yellow;
+}
+.titulo_del_blog1{
+    text-align: center;
+    font-size: 3rem;
 }
