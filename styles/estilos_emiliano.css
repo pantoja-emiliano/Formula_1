@@ -1,11 +1,14 @@
-/* color de la pagina 1*/
 body{
     background-color: pink;
+    color: #FFFF;
 }
-.resultado{
+article{
+    background-color: rgb(44, 43, 43);
+}
+.resaltado{
     color: yellow;
 }
-.titulo_del_blog1{
+#titulo_del_blog{
     text-align: center;
     font-size: 3rem;
 }
