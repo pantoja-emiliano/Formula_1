@@ -1,14 +1,44 @@
+/*clases generales*/
+/* color del cuerpo*/
 body{
-    background-color: pink;
+    background-color: gray;
     color: #FFFF;
 }
 article{
     background-color: rgb(44, 43, 43);
 }
-.resaltado{
-    color: yellow;
-}
+/* titulo del blog*/
 #titulo_del_blog{
     text-align: center;
     font-size: 3rem;
 }
+/*terminan clases generales*/
+.resaltado{
+    color: yellow;
+}
+
+article{
+    padding: 1.5rem;
+}
+/*empieza barra de navegaciones*/
+nav>ul>li{
+    list-style: none;
+}
+a>li>ul>nav{
+    text-decoration: none;
+}
+/* termina barra de navegaciones*/
+/* footer del blog*/
+.footer_blog{
+    margin: 2rem;
+}
+/*ilustraciones*/
+.ilustracion{
+    border: 4px solid red;
+}
+.ilustracion figcaption {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+/*terminan las ilustraciones*/
