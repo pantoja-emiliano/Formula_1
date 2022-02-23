@@ -44,3 +44,36 @@ nav>ul>li>a{
     font-style: italic;
 }
 /* fin ilustraciones */
+
+/*inicia grid*/
+section{
+    /*para que se despliegue como grid*/
+    display: grid;
+    /*para crear una reja de 12 columnas*/
+    grid-template-columns: repeat(12, 1fr);
+    /*para que los renglones ocupen el alto necesario*/
+    grid-auto-rows: auto;
+    /*espacio entre los elementos*/
+    gap: 3rem;
+}
+/*termina grid*/
+
+/*para el header que esta dentro de section*/
+section>header{
+    grid-column: span 12;
+}
+
+/*para el main que esta dentro de section*/
+section>main{
+    grid-column: span 8;
+}
+
+/*para el aside que esta dentro de section*/
+section>aside{
+    grid-column: span 4;
+}
+
+/*para el footer que esta dentro de section*/
+section>footer{
+    grid-column: span 12;
+}
