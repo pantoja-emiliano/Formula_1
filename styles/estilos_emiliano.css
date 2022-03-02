@@ -1,44 +1,78 @@
-/*clases generales*/
-/* color del cuerpo*/
+/* Clases generales */
 body{
-    background-color: gray;
-    color: #FFFF;
+    background-color: grey;
+    color:rgb(255, 255, 255);
 }
+
 article{
-    background-color: rgb(44, 43, 43);
+    background-color:rgb(44, 43,43);
+    padding: 1.5 rem;
+    border-bottom: rgb(255, 255, 255) 1px solid;
 }
-/* titulo del blog*/
+
 #titulo_del_blog{
     text-align: center;
-    font-size: 3rem;
+    font-size: 3erm;
 }
-/*terminan clases generales*/
+/* Terminan clases generales*/
+
+/* Empieza barras de navegación */
 .resaltado{
     color: yellow;
 }
 
-article{
-    padding: 1.5rem;
-}
-/*empieza barra de navegaciones*/
-nav>ul>li{
+nav>ul>li {
     list-style: none;
 }
 a>li>ul>nav{
     text-decoration: none;
 }
-/* termina barra de navegaciones*/
-/* footer del blog*/
-.footer_blog{
+/* Termina barra de navegación */
+
+/* Footer del blog */
+#footer_blog{
     margin: 2rem;
 }
-/*ilustraciones*/
+/* Fin del footer del blog */
+
+/* Ilustraciones */
 .ilustracion{
-    border: 4px solid red;
+    border: white 4px solid;
+    display: inline-block;
 }
 .ilustracion figcaption {
     margin-top: 1rem;
     margin-left: 1rem;
     font-style: italic;
 }
-/*terminan las ilustraciones*/
+/* Fin de ilustraciones */
+/* grid */
+section{
+    /* despliégate como grid */
+    display: grid;
+    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
+    grid-template-columns: repeat(12, 1fr);
+    /* deja que las filas(renglones) ocupen el alto que necesitan */
+    grid-auto-rows: auto;
+    /* añade un espacio entre los elementos del grid de 3rem */
+    gap: 3rem;
+}
+
+/* Termina grid */
+/* apunta sólo a los header que son hijos directos de section */
+section>header{
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
+section>main{
+    /* esta sección se extenderá 8 columnas. */
+    grid-column: span 8;
+}
+section>aside{
+    /* esta sección se extenderá 4 columnas. */
+    grid-column: span 4;
+}
+section>footer{
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
